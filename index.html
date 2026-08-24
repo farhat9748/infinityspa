@@ -1,0 +1,2467 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Infinity Spa | Premium Spa & Wellness</title>
+
+    <meta name="description"
+          content="Infinity Spa - Premium Spa & Wellness in New Town, Kolkata. Relax, recharge and rejuvenate.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <style>
+
+        /* =========================================
+           RESET
+        ========================================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            background: #f7f3ea;
+            color: #27312d;
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: "DM Serif Display", serif;
+            font-weight: 400;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        section {
+            padding: 100px 0;
+        }
+
+
+        /* =========================================
+           NAVBAR
+        ========================================= */
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+
+            background: rgba(20, 30, 26, 0.96);
+            backdrop-filter: blur(10px);
+
+            padding: 18px 0;
+        }
+
+        .nav-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: "DM Serif Display", serif;
+            color: white;
+            font-size: 30px;
+        }
+
+        .logo span {
+            color: #c3a56c;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #e6e6e6;
+            font-size: 14px;
+            transition: .3s;
+        }
+
+        .nav-links a:hover {
+            color: #c3a56c;
+        }
+
+        .nav-btn {
+            background: #b79a64;
+            padding: 11px 20px;
+            border-radius: 30px;
+            color: white !important;
+        }
+
+        .nav-btn:hover {
+            background: #927542;
+        }
+
+
+        /* =========================================
+           HERO
+        ========================================= */
+
+        .hero {
+            min-height: 100vh;
+
+            display: flex;
+            align-items: center;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(12, 23, 18, .93),
+                    rgba(12, 23, 18, .67),
+                    rgba(12, 23, 18, .2)
+                ),
+
+                url("https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1800&q=85");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-content {
+            max-width: 760px;
+            color: white;
+            padding-top: 60px;
+        }
+
+        .hero-small {
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: 13px;
+            color: #d6bc89;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .hero h1 {
+            font-size: clamp(55px, 8vw, 95px);
+            line-height: 1;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            color: #d2b57b;
+        }
+
+        .hero p {
+            color: #e6e6e6;
+            max-width: 680px;
+            font-size: 17px;
+            line-height: 1.9;
+            margin-bottom: 35px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: .3s;
+        }
+
+        .btn-gold {
+            background: #b79a64;
+            color: white;
+        }
+
+        .btn-gold:hover {
+            background: #927542;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 1px solid white;
+            color: white;
+            margin-left: 10px;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: #18231f;
+        }
+
+
+        /* =========================================
+           RATING
+        ========================================= */
+
+        .rating {
+            background: #18231f;
+            color: white;
+            padding: 24px 0;
+        }
+
+        .rating-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .stars {
+            color: #d2ae67;
+            font-size: 20px;
+            letter-spacing: 4px;
+        }
+
+        .rating-title {
+            font-size: 13px;
+            color: #ddd;
+            margin-top: 5px;
+        }
+
+        .rating-description {
+            color: #bbb;
+            font-size: 13px;
+        }
+
+
+        /* =========================================
+           COMMON
+        ========================================= */
+
+        .section-label {
+            color: #967947;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .section-title {
+            font-size: 52px;
+            line-height: 1.15;
+            margin-bottom: 20px;
+        }
+
+        .section-description {
+            color: #707873;
+            line-height: 1.9;
+            font-size: 15px;
+        }
+
+
+        /* =========================================
+           ABOUT
+        ========================================= */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .about-image {
+            height: 550px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .about-content {
+            padding-left: 10px;
+        }
+
+        .features {
+            list-style: none;
+            margin: 30px 0;
+        }
+
+        .features li {
+            margin-bottom: 14px;
+            color: #4d5752;
+        }
+
+        .features li::before {
+            content: "✓";
+            color: #b79a64;
+            font-weight: bold;
+            margin-right: 12px;
+        }
+
+
+        /* =========================================
+           EXPERIENCE
+        ========================================= */
+
+        .experience {
+            background: #18231f;
+            color: white;
+        }
+
+        .experience .section-description {
+            color: #bbc3be;
+            max-width: 650px;
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-top: 55px;
+        }
+
+        .step {
+            padding: 35px;
+            border-top: 1px solid rgba(255,255,255,.2);
+        }
+
+        .step-number {
+            color: #b79a64;
+            letter-spacing: 3px;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        .step h3 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .step p {
+            color: #bbc3be;
+            font-size: 14px;
+        }
+
+
+        /* =========================================
+           SERVICES
+        ========================================= */
+
+        .services {
+            background: white;
+        }
+
+        .center-heading {
+            text-align: center;
+            max-width: 720px;
+            margin: 0 auto 60px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .service-card {
+            background: #f7f3ea;
+            overflow: hidden;
+            transition: .4s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,.12);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .service-content {
+            padding: 28px;
+        }
+
+        .service-content h3 {
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
+
+        .service-content p {
+            color: #707873;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .service-link {
+            color: #947943;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+
+        /* =========================================
+           CTA
+        ========================================= */
+
+        .cta {
+            background:
+                linear-gradient(
+                    rgba(20,30,26,.82),
+                    rgba(20,30,26,.82)
+                ),
+
+                url("https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=1800&q=85");
+
+            background-size: cover;
+            background-position: center;
+
+            text-align: center;
+            color: white;
+        }
+
+        .cta-content {
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .cta h2 {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        .cta p {
+            color: #ddd;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+
+        /* =========================================
+           WHY CHOOSE US
+        ========================================= */
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .why-card {
+            padding: 32px;
+            border: 1px solid #ded8ca;
+            transition: .3s;
+        }
+
+        .why-card:hover {
+            border-color: #b79a64;
+            transform: translateY(-5px);
+        }
+
+        .why-icon {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background: #ebe3d3;
+            color: #947943;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .why-card h3 {
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        .why-card p {
+            color: #707873;
+            font-size: 14px;
+        }
+
+
+        /* =========================================
+           THERAPIST
+        ========================================= */
+
+        .therapist-section {
+            background: #eee8da;
+        }
+
+        .therapist-grid {
+            display: grid;
+            grid-template-columns: .8fr 1.2fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .therapist-img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+        }
+
+        .quote {
+            font-family: "DM Serif Display", serif;
+            font-size: 35px;
+            line-height: 1.5;
+            color: #18231f;
+            margin: 25px 0;
+        }
+
+
+        /* =========================================
+           GALLERY
+        ========================================= */
+
+        .gallery {
+            background: white;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            height: 260px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: .5s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.08);
+        }
+
+
+        /* =========================================
+           TESTIMONIALS
+        ========================================= */
+
+        .testimonials {
+            background: #18231f;
+            color: white;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .testimonial {
+            background: #22312b;
+            padding: 35px;
+        }
+
+        .testimonial-stars {
+            color: #d3ad66;
+            margin-bottom: 20px;
+        }
+
+        .testimonial p {
+            color: #d2d8d5;
+            font-size: 14px;
+            line-height: 1.9;
+            font-style: italic;
+        }
+
+        .customer {
+            margin-top: 25px;
+            font-weight: 600;
+            color: white;
+        }
+
+
+        /* =========================================
+           BOOKING
+        ========================================= */
+
+        .booking {
+            background: white;
+        }
+
+        .booking-grid {
+            display: grid;
+            grid-template-columns: .8fr 1.2fr;
+        }
+
+        .booking-info {
+            background: #18231f;
+            color: white;
+            padding: 55px;
+        }
+
+        .booking-info h2 {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        .booking-info p {
+            color: #bbc3be;
+            line-height: 1.8;
+        }
+
+        .booking-info ul {
+            list-style: none;
+            margin-top: 30px;
+        }
+
+        .booking-info li {
+            margin-bottom: 15px;
+            color: #d5d9d7;
+        }
+
+        .booking-info li::before {
+            content: "✓";
+            color: #c3a56c;
+            margin-right: 10px;
+        }
+
+        .booking-form {
+            padding: 50px;
+            background: #f7f3ea;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 7px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .form-control,
+        select,
+        textarea {
+            width: 100%;
+            border: 1px solid #d8d4ca;
+            padding: 14px;
+            background: white;
+            outline: none;
+            font-family: inherit;
+        }
+
+        .form-control:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #b79a64;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        textarea {
+            height: 130px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            padding: 15px;
+            background: #b79a64;
+            color: white;
+            font-weight: 600;
+            transition: .3s;
+        }
+
+        .submit-btn:hover {
+            background: #927542;
+        }
+
+
+        /* =========================================
+           CONTACT
+        ========================================= */
+
+        .contact {
+            background: #f7f3ea;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 35px;
+            text-align: center;
+            border: 1px solid #e2ddd2;
+        }
+
+        .contact-icon {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .contact-card h3 {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .contact-card p {
+            color: #707873;
+            font-size: 14px;
+        }
+
+        .map {
+            width: 100%;
+            height: 400px;
+            border: 0;
+        }
+
+
+        /* =========================================
+           FOOTER
+        ========================================= */
+
+        footer {
+            background: #101914;
+            color: white;
+            padding: 70px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 60px;
+        }
+
+        footer h3 {
+            font-size: 30px;
+            margin-bottom: 18px;
+        }
+
+        footer h3 span {
+            color: #c3a56c;
+        }
+
+        footer h4 {
+            color: #c3a56c;
+            margin-bottom: 20px;
+            font-family: "Inter", sans-serif;
+            font-size: 15px;
+        }
+
+        footer p,
+        footer li {
+            color: #9ca6a0;
+            font-size: 14px;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer li {
+            margin-bottom: 9px;
+        }
+
+        footer a {
+            color: #9ca6a0;
+        }
+
+        footer a:hover {
+            color: #c3a56c;
+        }
+
+        .social {
+            margin-top: 20px;
+        }
+
+        .social a {
+            display: inline-flex;
+
+            width: 42px;
+            height: 42px;
+
+            background: #202b26;
+            color: white;
+
+            border-radius: 50%;
+
+            justify-content: center;
+            align-items: center;
+
+            margin-right: 7px;
+        }
+
+        .social a:hover {
+            background: #b79a64;
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #29342f;
+            margin-top: 50px;
+            padding-top: 20px;
+            color: #707a74;
+            font-size: 13px;
+        }
+
+
+        /* =========================================
+           FLOATING BUTTONS
+        ========================================= */
+
+        .floating-call,
+        .floating-whatsapp {
+            position: fixed;
+            right: 20px;
+
+            width: 55px;
+            height: 55px;
+
+            border-radius: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: white;
+
+            z-index: 1000;
+
+            box-shadow: 0 5px 20px rgba(0,0,0,.2);
+        }
+
+        .floating-call {
+            bottom: 80px;
+            background: #b79a64;
+        }
+
+        .floating-whatsapp {
+            bottom: 15px;
+            background: #25d366;
+        }
+
+
+        /* =========================================
+           MOBILE MENU
+        ========================================= */
+
+        .menu-toggle {
+            display: none;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+
+        /* =========================================
+           RESPONSIVE
+        ========================================= */
+
+        @media(max-width: 900px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .about-grid,
+            .therapist-grid,
+            .booking-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid,
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .steps {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .about-content {
+                padding-left: 0;
+            }
+
+        }
+
+
+        @media(max-width: 600px) {
+
+            section {
+                padding: 70px 0;
+            }
+
+            .hero h1 {
+                font-size: 52px;
+            }
+
+            .hero p {
+                font-size: 15px;
+            }
+
+            .btn-outline {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+
+            .section-title {
+                font-size: 40px;
+            }
+
+            .services-grid,
+            .why-grid,
+            .contact-grid,
+            .gallery-grid,
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-item {
+                height: 300px;
+            }
+
+            .about-image,
+            .therapist-img {
+                height: 400px;
+            }
+
+            .rating-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .booking-info,
+            .booking-form {
+                padding: 30px;
+            }
+
+            .cta h2 {
+                font-size: 45px;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="#home" class="logo">
+            Infinity <span>Spa</span>
+        </a>
+
+        <nav>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+
+                <li>
+                    <a href="#gallery">Gallery</a>
+                </li>
+
+                <li>
+                    <a href="#reviews">Reviews</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+                <li>
+                    <a href="#booking" class="nav-btn">
+                        Book Now
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <div class="menu-toggle">
+            ☰
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero" id="home">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <div class="hero-small">
+                Premium Spa & Wellness • New Town, Kolkata
+            </div>
+
+            <h1>
+                Experience the
+                <span>Art of Relaxation</span>
+            </h1>
+
+            <p>
+                Welcome to Infinity Spa, a peaceful sanctuary in New Town
+                where relaxation meets refined wellness. Let our professional
+                therapists guide you through carefully crafted wellness
+                experiences designed around your comfort.
+            </p>
+
+            <a href="#booking" class="btn btn-gold">
+                Book Your Experience
+            </a>
+
+            <a href="tel:8478900020"
+               class="btn btn-outline">
+                Call Us Now
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     RATING
+===================================================== -->
+
+<div class="rating">
+
+    <div class="rating-container">
+
+        <div>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <div class="rating-title">
+                4.9 OUT OF 5 — TRUSTED BY OUR GUESTS
+            </div>
+
+        </div>
+
+        <div class="rating-description">
+            Highly rated for professional service, relaxing environment
+            and rejuvenating experiences in New Town, Kolkata.
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section id="about">
+
+    <div class="container">
+
+        <div class="about-grid">
+
+            <div>
+
+                <img
+                    src="https://travarsa.net/wp-content/uploads/2026/08/ChatGPT-Image-Aug-22-2026-01_58_05-AM-768x768.png"
+                    class="about-image"
+                    alt="Infinity Spa"
+                >
+
+            </div>
+
+            <div class="about-content">
+
+                <div class="section-label">
+                    About Infinity Spa
+                </div>
+
+                <h2 class="section-title">
+                    A Space Designed
+                    for Your Wellbeing
+                </h2>
+
+                <p class="section-description">
+                    Infinity Spa is designed as a calm escape from the
+                    pace of everyday Kolkata life, offering professional
+                    massage and wellness experiences in a comfortable,
+                    modern environment in the heart of New Town.
+                </p>
+
+                <ul class="features">
+
+                    <li>
+                        Professional service
+                    </li>
+
+                    <li>
+                        Multiple treatment options
+                    </li>
+
+                    <li>
+                        Comfortable environment
+                    </li>
+
+                    <li>
+                        Convenient New Town location
+                    </li>
+
+                    <li>
+                        Easy booking by call or WhatsApp
+                    </li>
+
+                </ul>
+
+                <a href="#services" class="btn btn-gold">
+                    Discover Infinity Spa
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     EXPERIENCE
+===================================================== -->
+
+<section class="experience">
+
+    <div class="container">
+
+        <div class="section-label">
+            The Experience
+        </div>
+
+        <h2 class="section-title">
+            Your Visit,
+            In Three Steps
+        </h2>
+
+        <p class="section-description">
+            From arrival to departure, every part of your experience
+            is designed to help you slow down and relax.
+        </p>
+
+
+        <div class="steps">
+
+            <div class="step">
+
+                <div class="step-number">
+                    01
+                </div>
+
+                <h3>
+                    Arrive
+                </h3>
+
+                <p>
+                    Leave the rush of everyday life behind at our
+                    peaceful New Town location.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    02
+                </div>
+
+                <h3>
+                    Relax
+                </h3>
+
+                <p>
+                    Choose the treatment that suits your body,
+                    mood and wellness needs.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    03
+                </div>
+
+                <h3>
+                    Recharge
+                </h3>
+
+                <p>
+                    Take time to feel refreshed before you step
+                    back outside into your day.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+
+<section class="services" id="services">
+
+    <div class="container">
+
+        <div class="center-heading">
+
+            <div class="section-label">
+                Our Services
+            </div>
+
+            <h2 class="section-title">
+                Our Signature Services
+            </h2>
+
+            <p class="section-description">
+                Indulge in our handpicked wellness experiences designed
+                to help you relax your body, soothe your mind and
+                restore your sense of balance.
+            </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+
+            <!-- SERVICE 1 -->
+
+            <div class="service-card">
+
+                <img
+                    src="https://travarsa.net/wp-content/uploads/2026/08/revised-full-body.png"
+                    alt="Full Body Massage"
+                >
+
+                <div class="service-content">
+
+                    <h3>
+                        Full Body Massage
+                    </h3>
+
+                    <p>
+                        A complete head-to-toe massage experience designed
+                        to promote relaxation, ease muscle tension and
+                        leave you feeling refreshed.
+                    </p>
+
+                    <a href="#booking" class="service-link">
+                        Book Treatment →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- SERVICE 2 -->
+
+            <div class="service-card">
+
+                <img
+                    src="https://travarsa.net/wp-content/uploads/2026/08/revised-aroma-therapy.png"
+                    alt="Aroma Therapy"
+                >
+
+                <div class="service-content">
+
+                    <h3>
+                        Aroma Therapy
+                    </h3>
+
+                    <p>
+                        Enjoy a calming aromatic wellness experience
+                        designed to create a soothing atmosphere for
+                        both body and mind.
+                    </p>
+
+                    <a href="#booking" class="service-link">
+                        Book Treatment →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- SERVICE 3 -->
+
+            <div class="service-card">
+
+                <img
+                    src="https://travarsa.net/wp-content/uploads/2026/08/revised-deep-tissue.png"
+                    alt="Deep Tissue Massage"
+                >
+
+                <div class="service-content">
+
+                    <h3>
+                        Deep Tissue Massage
+                    </h3>
+
+                    <p>
+                        A focused massage experience designed for areas
+                        of deeper muscle tension, stiffness and everyday
+                        physical stress.
+                    </p>
+
+                    <a href="#booking" class="service-link">
+                        Book Treatment →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- SERVICE 4 -->
+
+            <div class="service-card">
+
+                <img
+                    src="https://travarsa.net/wp-content/uploads/2026/08/revised-head-shoulder.png"
+                    alt="Head and Shoulder Massage"
+                >
+
+                <div class="service-content">
+
+                    <h3>
+                        Head & Shoulder
+                    </h3>
+
+                    <p>
+                        A relaxing treatment focused on the head,
+                        neck and shoulder areas after a busy day.
+                    </p>
+
+                    <a href="#booking" class="service-link">
+                        Book Treatment →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- SERVICE 5 -->
+
+            <div class="service-card">
+
+                <img
+                    src="https://travarsa.net/wp-content/uploads/2026/08/revised-foot-reflexology.png"
+                    alt="Foot Reflexology"
+                >
+
+                <div class="service-content">
+
+                    <h3>
+                        Foot Reflexology
+                    </h3>
+
+                    <p>
+                        A relaxing foot-focused experience using
+                        gentle pressure techniques designed to
+                        help reduce everyday fatigue.
+                    </p>
+
+                    <a href="#booking" class="service-link">
+                        Book Treatment →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- SERVICE 6 -->
+
+            <div class="service-card">
+
+                <img
+                    src="https://travarsa.net/wp-content/uploads/2026/08/07_couples_massage.png"
+                    alt="Couple Massage"
+                >
+
+                <div class="service-content">
+
+                    <h3>
+                        Couple Massage
+                    </h3>
+
+                    <p>
+                        Enjoy a shared wellness experience in a
+                        serene environment designed for relaxation
+                        and quality time together.
+                    </p>
+
+                    <a href="#booking" class="service-link">
+                        Book Treatment →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <div class="cta-content">
+
+            <div class="section-label">
+                Your Time to Unwind
+            </div>
+
+            <h2>
+                Take a Break.
+                <br>
+                Feel Refreshed.
+            </h2>
+
+            <p>
+                Take a break from everyday life and choose an experience
+                designed around your relaxation and wellness.
+            </p>
+
+            <a href="tel:8478900020"
+               class="btn btn-gold">
+                Call Us Now
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     WHY CHOOSE US
+===================================================== -->
+
+<section>
+
+    <div class="container">
+
+        <div class="center-heading">
+
+            <div class="section-label">
+                Why Choose Infinity Spa?
+            </div>
+
+            <h2 class="section-title">
+                Wellness With
+                a Personal Touch
+            </h2>
+
+        </div>
+
+
+        <div class="why-grid">
+
+
+            <div class="why-card">
+
+                <div class="why-icon">
+                    ✦
+                </div>
+
+                <h3>
+                    Wide Range of Treatments
+                </h3>
+
+                <p>
+                    Choose from multiple massage experiences
+                    based on your wellness preferences.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <div class="why-icon">
+                    ✓
+                </div>
+
+                <h3>
+                    Professional Service
+                </h3>
+
+                <p>
+                    Our service is focused on comfort,
+                    attention and quality.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <div class="why-icon">
+                    ♡
+                </div>
+
+                <h3>
+                    Private & Comfortable
+                </h3>
+
+                <p>
+                    Relax in a peaceful environment designed
+                    around your comfort.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <div class="why-icon">
+                    ⌖
+                </div>
+
+                <h3>
+                    New Town Location
+                </h3>
+
+                <p>
+                    Conveniently located in New Town, Kolkata.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <div class="why-icon">
+                    ◇
+                </div>
+
+                <h3>
+                    Premium Experience
+                </h3>
+
+                <p>
+                    Enjoy a refined wellness experience at
+                    accessible prices.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <div class="why-icon">
+                    ☎
+                </div>
+
+                <h3>
+                    Easy Booking
+                </h3>
+
+                <p>
+                    Call or WhatsApp us to schedule your
+                    appointment easily.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     THERAPIST / WELLNESS
+===================================================== -->
+
+<section class="therapist-section">
+
+    <div class="container">
+
+        <div class="therapist-grid">
+
+            <div>
+
+                <img
+                    src="https://travarsa.net/wp-content/uploads/2026/08/15_female_therapist_portrait-747x1024.png"
+                    class="therapist-img"
+                    alt="Spa Therapist"
+                >
+
+            </div>
+
+
+            <div>
+
+                <div class="section-label">
+                    The Infinity Experience
+                </div>
+
+                <h2 class="section-title">
+                    Your Comfort
+                    Comes First
+                </h2>
+
+                <div class="quote">
+                    "Slow down, breathe deeply,
+                    and give yourself time to relax."
+                </div>
+
+                <p class="section-description">
+                    At Infinity Spa, every visit is designed around
+                    creating a calm and comfortable environment where
+                    you can step away from everyday pressure and focus
+                    on your wellbeing.
+                </p>
+
+                <a href="#booking"
+                   class="btn btn-gold"
+                   style="margin-top:25px;">
+                    Plan Your Visit
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     GALLERY
+===================================================== -->
+
+<section class="gallery" id="gallery">
+
+    <div class="container">
+
+        <div class="center-heading">
+
+            <div class="section-label">
+                Signature Treatments
+            </div>
+
+            <h2 class="section-title">
+                Explore Our
+                Wellness Space
+            </h2>
+
+            <p class="section-description">
+                A glimpse into the calm atmosphere and wellness
+                experiences at Infinity Spa.
+            </p>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+
+                <img
+                    src="https://travarsa.net/wp-content/uploads/elementor/thumbs/04_back_massage-rs8xaf5a77fiky3d8hoqk8bgwn6jtpt2gi69ewlo34.png"
+                    alt="Back Massage"
+                >
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="https://travarsa.net/wp-content/uploads/elementor/thumbs/08_oil_treatment-rs8xb4ixbqe9af2i4annxjwwy1pgljltjzsdddk1f4.png"
+                    alt="Oil Treatment"
+                >
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="https://travarsa.net/wp-content/uploads/elementor/thumbs/11_treatment_room-rs8xbnbp4f3zqmb72is7bf64tr4svhogaku2yws5yo.png"
+                    alt="Treatment Room"
+                >
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="https://travarsa.net/wp-content/uploads/elementor/thumbs/12_private_suite-rs8xbs0w2lafco4db2tc5vzfsohmxz73z83idal73k.png"
+                    alt="Private Suite"
+                >
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="https://travarsa.net/wp-content/uploads/elementor/thumbs/head-shoulder-massage-rs99ha0l2k6z6smmm6u2phj1h03xmc1hgnbfppwj00.png"
+                    alt="Head Shoulder Massage"
+                >
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="https://travarsa.net/wp-content/uploads/elementor/thumbs/aroma-therapy-e1787358993482-rs99jrb93tl7tr0x4rfmscztwlvsxkvzgxakb084kw.png"
+                    alt="Aroma Therapy"
+                >
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="https://travarsa.net/wp-content/uploads/elementor/thumbs/deep-tissue-massage-rs99irldw48bkkgsxbzt5m0bbyrut2y6o0i42hp35c.png"
+                    alt="Deep Tissue Massage"
+                >
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="https://travarsa.net/wp-content/uploads/elementor/thumbs/massage_full_body-rs99fw750cas3gmzp3aujc3lzkxhadjplsqpa1ye5s.png"
+                    alt="Full Body Massage"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TESTIMONIALS
+===================================================== -->
+
+<section class="testimonials" id="reviews">
+
+    <div class="container">
+
+        <div class="center-heading">
+
+            <div class="section-label">
+                Guest Reviews
+            </div>
+
+            <h2 class="section-title">
+                What Our Guests Say
+            </h2>
+
+        </div>
+
+
+        <div class="testimonial-grid">
+
+
+            <div class="testimonial">
+
+                <div class="testimonial-stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Excellent spa in New Town, Kolkata. The full body
+                    massage was relaxing, professional, and exactly
+                    what I needed after a hectic week."
+                </p>
+
+                <div class="customer">
+                    — Sayan Mukherjee
+                </div>
+
+            </div>
+
+
+            <div class="testimonial">
+
+                <div class="testimonial-stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "One of the best massage spas in Kolkata. The
+                    therapists are skilled, the ambience is peaceful,
+                    and the service feels genuinely premium."
+                </p>
+
+                <div class="customer">
+                    — Arindam Chatterjee
+                </div>
+
+            </div>
+
+
+            <div class="testimonial">
+
+                <div class="testimonial-stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Really impressed with the wellness experience
+                    at Infinity Spa. The deep tissue massage helped
+                    me relax, and the entire environment was clean."
+                </p>
+
+                <div class="customer">
+                    — Rahul Banerjee
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     BOOKING
+===================================================== -->
+
+<section class="booking" id="booking">
+
+    <div class="container">
+
+        <div class="booking-grid">
+
+
+            <div class="booking-info">
+
+                <div class="section-label">
+                    Book Your Experience
+                </div>
+
+                <h2>
+                    Make Time
+                    For Yourself
+                </h2>
+
+                <p>
+                    Choose your preferred treatment and send us
+                    your appointment request. Our team will contact
+                    you to confirm the details.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Professional wellness service
+                    </li>
+
+                    <li>
+                        Multiple treatment options
+                    </li>
+
+                    <li>
+                        Comfortable environment
+                    </li>
+
+                    <li>
+                        Easy appointment booking
+                    </li>
+
+                </ul>
+
+                <br>
+
+                <strong>
+                    Call:
+                    <a href="tel:8478900020"
+                       style="color:#c3a56c;">
+                        84789 00020
+                    </a>
+                </strong>
+
+            </div>
+
+
+            <div class="booking-form">
+
+                <form action="#" method="post">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label>
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Your name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                class="form-control"
+                                placeholder="Your phone"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label>
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                class="form-control"
+                                placeholder="Your email"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Preferred Date
+                            </label>
+
+                            <input
+                                type="date"
+                                class="form-control"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label>
+                                Treatment
+                            </label>
+
+                            <select required>
+
+                                <option value="">
+                                    Select Treatment
+                                </option>
+
+                                <option>
+                                    Full Body Massage
+                                </option>
+
+                                <option>
+                                    Aroma Therapy
+                                </option>
+
+                                <option>
+                                    Deep Tissue Massage
+                                </option>
+
+                                <option>
+                                    Head & Shoulder Massage
+                                </option>
+
+                                <option>
+                                    Foot Reflexology
+                                </option>
+
+                                <option>
+                                    Couple Massage
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Preferred Time
+                            </label>
+
+                            <select>
+
+                                <option>
+                                    Morning
+                                </option>
+
+                                <option>
+                                    Afternoon
+                                </option>
+
+                                <option>
+                                    Evening
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Message
+                        </label>
+
+                        <textarea
+                            placeholder="Tell us anything you'd like us to know..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="submit-btn"
+                    >
+                        Request Appointment
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <div class="center-heading">
+
+            <div class="section-label">
+                Visit Infinity Spa
+            </div>
+
+            <h2 class="section-title">
+                Find Your Way
+                To Relaxation
+            </h2>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    📍
+                </div>
+
+                <h3>
+                    Address
+                </h3>
+
+                <p>
+                    Suite No 127, 1st Floor,<br>
+                    DLF New Town Heights, Plaza,<br>
+                    Action Area III, Chotto Chandpur,<br>
+                    Newtown, Kolkata, West Bengal 700135
+                </p>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    ☎
+                </div>
+
+                <h3>
+                    Phone
+                </h3>
+
+                <p>
+                    <a href="tel:8478900020">
+                        84789 00020
+                    </a>
+                </p>
+
+                <br>
+
+                <a href="tel:8478900020"
+                   class="btn btn-gold">
+                    Call Now
+                </a>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    💬
+                </div>
+
+                <h3>
+                    WhatsApp
+                </h3>
+
+                <p>
+                    Contact us directly to check availability
+                    and schedule your visit.
+                </p>
+
+                <br>
+
+                <a
+                    href="https://wa.me/918478900020"
+                    target="_blank"
+                    class="btn btn-gold"
+                >
+                    WhatsApp Us
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <iframe
+            class="map"
+            src="https://maps.google.com/maps?q=DLF%20New%20Town%20Heights%2C%20Newtown%2C%20Kolkata%20700135&t=&z=14&ie=UTF8&iwloc=&output=embed"
+            loading="lazy">
+        </iframe>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+
+            <div>
+
+                <h3>
+                    Infinity <span>Spa</span>
+                </h3>
+
+                <p>
+                    A peaceful sanctuary for relaxation and wellness
+                    in New Town, Kolkata. Take a moment to slow down,
+                    recharge and feel refreshed.
+                </p>
+
+                <div class="social">
+
+                    <a href="#">
+                        f
+                    </a>
+
+                    <a href="#">
+                        𝕏
+                    </a>
+
+                    <a href="#">
+                        ▶
+                    </a>
+
+                    <a
+                        href="https://wa.me/918478900020"
+                        target="_blank"
+                    >
+                        W
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    QUICK LINKS
+                </h4>
+
+                <ul>
+
+                    <li>
+                        <a href="#home">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#about">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#services">
+                            Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#gallery">
+                            Gallery
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#reviews">
+                            Reviews
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    CONTACT
+                </h4>
+
+                <p>
+                    New Town, Kolkata
+                </p>
+
+                <p>
+                    <a href="tel:8478900020">
+                        84789 00020
+                    </a>
+                </p>
+
+                <p>
+                    Open for appointments
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Infinity Spa. All Rights Reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     FLOATING CALL
+===================================================== -->
+
+<a
+    href="tel:8478900020"
+    class="floating-call"
+    title="Call Infinity Spa"
+>
+    ☎
+</a>
+
+
+<!-- =====================================================
+     FLOATING WHATSAPP
+===================================================== -->
+
+<a
+    href="https://wa.me/918478900020"
+    target="_blank"
+    class="floating-whatsapp"
+    title="WhatsApp Infinity Spa"
+>
+    W
+</a>
+
+
+</body>
+</html>
+```
